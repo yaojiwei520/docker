@@ -1,0 +1,4 @@
+# bridge模式一键安装
+docker run -d --restart=always --name="xiaoya" -p 5678:80 -p 2345:2345 -p 2346:2346 -v /volume1/docker/xiaoya:/data xiaoyaliu/alist:latest
+# host模式一键安装
+bash -c "$(curl http://docker.xiaoya.pro/update_new.sh)" -s host
